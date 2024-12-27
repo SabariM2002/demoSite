@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .out{
+            left: 550px;
+            top: 200px;
+            border-radius: 100px;
+            background-image:url(./photos/hi.jpeg) ;
+            background-size: cover;
+            position: relative;
+            height: 600px;
+            width: 700px;
+            background-color: yellow;
+            animation-name:sabarii;
+            animation-duration: 10s;
+            animation-delay:1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal ;
+            transition: linear;
+        }
+        .in{
+            background-image: url(./photos/laughing-luffy-one-3840x2160-19342.jpg);
+            background-size:contain;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius:100px;
+            background-color: red;
+            animation-name:sabari;
+            animation-duration: 10s;
+            animation-delay:1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal ;
+            transition: linear;
+            top: 500px;
+            left: 40%;
+        }
+        @keyframes sabari{
+            0%{
+                top: 500px;
+                left: 40%;
+            }
+            16%{
+                top:500px;
+                left: 0px;
+                transform: rotate(360deg);
+            }
+            32%{
+                top:500px;
+                left: 0px;
+                /* transform: rotate(0deg); */
+            }
+            48%{
+                top:500px;
+                left:600px;
+                transform: rotate(0deg);
+            }
+            64%{
+                top:500px;
+                left:600px;
+                /* transform: rotate(0deg); */
+                
+            }
+            80%{
+                top: 500px;
+                left: 30%;
+                transform: rotate(360deg);
+            }
+            100%{
+                top: 500px;
+                left: 40%;
+                transform: rotate(0deg);
+            }
+
+        }
+        @keyframes sabarii{
+            0%{
+                transform: rotate(0deg);
+            }
+            16%{
+                transform: rotate(-30deg);
+            }
+            32%{
+                transform: rotate(0deg);
+            }
+            48%{
+                transform: rotate(30deg);
+            }
+            64%{
+                transform: rotate(0deg);
+            }
+            80%{
+                transform: rotate(-10deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in">
+
+        </div>
+    </div>
+</body>
+</html>
